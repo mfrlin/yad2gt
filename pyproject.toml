@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "yad2gt"
+version = "0.1.0"
+description = "Yet Another Diablo 2 Grail Tracker"
+authors = ["Martin Frlin <martin.frlin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11 <3.12"
+pyside6 = "^6.6.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
