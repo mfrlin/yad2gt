@@ -2,7 +2,7 @@ import csv
 import datetime
 import enum
 import pathlib
-from typing import NamedTuple
+from dataclasses import dataclass
 
 
 class Rarity(enum.Enum):
@@ -171,7 +171,8 @@ CATEGORIES = [
 # }
 
 
-class Item(NamedTuple):
+@dataclass
+class Item:
     id: int
     name: str
     base: str
