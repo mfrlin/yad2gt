@@ -3,6 +3,7 @@ import datetime
 import enum
 import pathlib
 from dataclasses import dataclass
+from pathlib import Path
 
 
 class Rarity(enum.Enum):
@@ -202,8 +203,7 @@ def _load_items(file_name: str):
             row["category"] = int(row["category"])
             _ITEMS.append(Item(**row))
 
-
-_load_items("items.csv")
+_load_items(Path(__file__).parent / 'assets' / 'items.csv')
 
 # future proofing if new items are added
 _ITEMS.sort(key=lambda i: i.id)  # sort so that item.id == index

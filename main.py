@@ -1,4 +1,5 @@
 import sys
+from pathlib import Path
 
 from PySide6 import QtCore
 from PySide6.QtWidgets import (
@@ -34,14 +35,12 @@ UNIQUE_ITEMS = [
     "Wand",
     "Holy Water Sprinkler",
     "Champion Axe",
-    "Hydra Bow",
     "Forged Knife",
     "Winged Harpoon",
     "Scourge",
     "Thunder Maul",
     "Cryptic Axe",
-    "Caduceus",
-    "Mancatcher",
+    "Caduceus", 
     "War Pike",
     "Phase Blade",
     "Colossus Blade",
@@ -54,14 +53,12 @@ UNIQUE_ITEMS = [
     "Winged Helm",
     "Linked Mail",
     "Battle Gauntlets",
-    "Spired Helm",
     "Corona",
     "Bone Visage",
     "Shadow Plate",
     "Sacred Armor",
     "Blade Barrier",
     "Aegis",
-    "Ward",
     "Ogre Gauntlets",
     "Myrmidon Greaves",
     "Vampirefang Belt",
@@ -164,13 +161,13 @@ class SearchWindow(QWidget):
 def main():
     app = QApplication(sys.argv)
     id = QFontDatabase.addApplicationFont(
-        "C:\projects\overlay\exocetblizzardot-medium.otf"
+        str(Path(__file__).parent / 'assets' / 'exocetblizzardot-medium.otf')
     )
     # families = QFontDatabase.applicationFontFamilies(id)
     # print(families[0])
     app.setQuitOnLastWindowClosed(False)
 
-    trayIcon = SystemTrayIcon(QIcon("icon.png"))
+    trayIcon = SystemTrayIcon(QIcon(str(Path(__file__).parent / 'assets' / 'icon.png')))
 
     trayIcon.show()
 
