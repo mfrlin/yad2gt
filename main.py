@@ -11,8 +11,9 @@ from PySide6.QtWidgets import (
     QVBoxLayout,
     QLineEdit,
     QLayout,
+    QAbstractButton,
 )
-from PySide6.QtGui import QIcon, QPalette, QColorConstants, QFont, QFontDatabase, QColor
+from PySide6.QtGui import QIcon, QPalette, QColorConstants, QFont, QFontDatabase, QColor, QPainter, QPixmap, QTransform
 
 import items
 
@@ -95,6 +96,61 @@ class ListOverlayWindow(QWidget):
             self.vlayout.addWidget(label)
 
 
+class PictureButton(QAbstractButton):
+
+    def __init__(self, parent):
+        super().__init__(parent)
+        _mirror_tranform = QTransform().scale(-1, 1)
+        self.default_picture = QPixmap("assets\\advancedstatsbutton.sprite.00.png").transformed(_mirror_tranform)
+        self.press_picture = QPixmap("assets\\advancedstatsbutton.sprite.01.png").transformed(_mirror_tranform)
+        self.setPicture(self.default_picture)
+        self.pressed.connect(self._mouse_press)
+        self.released.connect(self._mouse_release)
+
+    def setPicture(self, picture):
+        self.picture = picture
+        self.update()
+
+    def sizeHint(self):
+        print('size hint called', self.picture.size())
+        return self.picture.size()
+    
+    def _mouse_press(self):
+        self.setPicture(self.press_picture)
+    
+    def _mouse_release(self):
+        self.setPicture(self.default_picture)   
+
+    def paintEvent(self, e):
+        painter = QPainter(self)
+        painter.drawPixmap(0, 0, self.picture)
+
+
+class ButtonWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        style_sheet = """
+        QPushButton{
+            qproperty-icon:url("assets\\advancedstatsbutton.sprite.00.png");
+        }
+
+        QPushButton:hover
+        {
+            qproperty-icon:url("assets\\advancedstatsbutton.sprite.01.png");
+        }        
+        """ 
+        self.button = PictureButton(self)
+        self.setFixedSize(self.button.sizeHint())
+        # self.button.setPicture(QIcon("assets\\advancedstatsbutton.sprite.01.png"))
+        # #self.button.setStyleSheet(style_sheet)
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground, True)
+        self.setWindowFlags(
+            QtCore.Qt.WindowStaysOnTopHint
+            | QtCore.Qt.FramelessWindowHint
+            | QtCore.Qt.Tool
+        )
+
 class SearchWindow(QWidget):
     def __init__(self):
         super().__init__()
@@ -170,13 +226,16 @@ def main():
     trayIcon = SystemTrayIcon(QIcon(str(Path(__file__).parent / 'assets' / 'icon.png')))
 
     trayIcon.show()
-
-    color_window = ListOverlayWindow()
-    color_window.show()
-    screen_width, screen_height = color_window.screen().size().toTuple()
-    x = screen_width - color_window.width()
-    y = (screen_height - color_window.height()) / 2
-    color_window.move(x, y)
+    button_window = ButtonWindow()
+    list_window = ListOverlayWindow()
+    list_window.show()
+    screen_width, screen_height = list_window.screen().size().toTuple()
+    x = screen_width - list_window.width()
+    y = (screen_height - list_window.height()) / 2
+    list_window.move(x, y)
+    button_window.show()
+    print('button window', button_window.width(), button_window.height())
+    button_window.move(x + list_window.width() - button_window.width(), y - button_window.height())
 
     # search_window = SearchWindow()
     # search_window.show()
