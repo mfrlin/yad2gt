@@ -13,7 +13,7 @@ from PySide6.QtWidgets import (
     QLayout,
     QAbstractButton,
 )
-from PySide6.QtGui import QIcon, QPalette, QColorConstants, QFont, QFontDatabase, QColor, QPainter, QPixmap, QTransform
+from PySide6.QtGui import QIcon, QPalette, QColorConstants, QFont, QFontDatabase, QColor, QPainter, QPixmap, QTransform, QCursor
 
 import items
 
@@ -130,20 +130,11 @@ class ButtonWindow(QWidget):
     def __init__(self):
         super().__init__()
 
-        style_sheet = """
-        QPushButton{
-            qproperty-icon:url("assets\\advancedstatsbutton.sprite.00.png");
-        }
-
-        QPushButton:hover
-        {
-            qproperty-icon:url("assets\\advancedstatsbutton.sprite.01.png");
-        }        
-        """ 
         self.button = PictureButton(self)
+        p = QPixmap("assets\\ohand.sprite.00.png").transformed(QTransform().fromScale(0.5, 0.5))
+        print('image size', p.size())
+        self.button.setCursor(QCursor(p, hotX=0, hotY=0))
         self.setFixedSize(self.button.sizeHint())
-        # self.button.setPicture(QIcon("assets\\advancedstatsbutton.sprite.01.png"))
-        # #self.button.setStyleSheet(style_sheet)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground, True)
         self.setWindowFlags(
             QtCore.Qt.WindowStaysOnTopHint
