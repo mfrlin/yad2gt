@@ -1,6 +1,7 @@
 import csv
 import datetime
 import enum
+import os
 import pathlib
 from dataclasses import dataclass
 from pathlib import Path
@@ -63,18 +64,18 @@ CATEGORIES = [
     "Tal Rasha's Wrappings",  # 30
     "Trang-Oul's Avatar",  # 31
     "Runes",  # 32
-    "",  # 33
-    "",  # 34
-    "",  # 35
-    "",  # 36
-    "",  # 37
-    "",  # 38
-    "",  # 39
-    "",  # 40
-    "",  # 41
-    "",  # 42
-    "",  # 43
-    "",  # 44
+    "Rings",  # 33
+    "Amulets",  # 34
+    "Charms",  # 35
+    "Jewels",  # 36
+    "Amazon",  # 37
+    "Assassin",  # 38
+    "Necromancer",  # 39
+    "Barbarian",  # 40
+    "Sorceress",  # 41
+    "Druid",  # 42
+    "Paladin",  # 43
+    "Normal Unique Armor",  # 44
     "",  # 45
     "",  # 46
     "",  # 47
@@ -243,43 +244,40 @@ def search(query: str) -> list[Item]:
     return results
 
 
-_FOUND_ITEMS: set[Item] = set()
 _FOUND_ITEMS_IDS: set[int] = set()
-
 
 def mark_found(item_id: int):
     dt = datetime.datetime.now()
-    _FOUND_ITEMS.add((item_id, dt))
     _FOUND_ITEMS_IDS.add(item_id)
-    with open("found.db", "wa") as f:
-        f.write(f"{item_id},{dt.isoformat()}")
-
+    with open("found.db", "a") as f:
+        f.write(f"A,{item_id},{dt.isoformat()}\n")
 
 def mark_missing(item_id: int):
-    for_removal = None
-    for t in _FOUND_ITEMS:
-        if t[0] == item_id:
-            for_removal = t
-            break
-    _FOUND_ITEMS.remove(for_removal)
     _FOUND_ITEMS_IDS.remove(item_id)
-    with open("found.db") as f:
-        lines = f.readlines()
-    with open("found.db", "w") as f:
-        for line in lines:
-            if line.startswith(f"{item_id},"):
-                continue
-            f.write(line)
+    with open("found.db", "a") as f:
+        f.write(f"R,{item_id}\n")
+
+
+def deduplicate_todo(item_id: int):
+    _FOUND_ITEMS_IDS.remove(item_id)
+    
+    temp_file = "found_temp.db"
+    with open("found.db", "r") as original, open(temp_file, "w") as temp:
+        for line in original:
+            if not line.startswith(f"{item_id},"):
+                temp.write(line)
+    
+    os.replace(temp_file, "found.db")
 
 
 def load_found():
     with open("found.db") as f:
         for line in f.readlines():
-            item_id_str, datetime_str = line.strip().split(",")
-            _FOUND_ITEMS.add(
-                (int(item_id_str), datetime.datetime.fromisoformat(datetime_str))
-            )
-            _FOUND_ITEMS_IDS.add(int(item_id_str))
+            action, item_id_str, *_ = line.strip().split(",")
+            if action == 'A':
+                _FOUND_ITEMS_IDS.add(int(item_id_str))
+            else:
+                _FOUND_ITEMS_IDS.remove(int(item_id_str))
 
 
 def ensure_found_file():
