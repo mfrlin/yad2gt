@@ -17,10 +17,21 @@ from PySide6.QtWidgets import (
     QCheckBox,
     QSizePolicy,
 )
-from PySide6.QtGui import QIcon, QPalette, QColorConstants, QFont, QFontDatabase, QColor, QPainter, QPixmap, QTransform, QCursor
+from PySide6.QtGui import (
+    QIcon, 
+    QKeyEvent, 
+    QPalette, 
+    QColorConstants,
+    QFont,
+    QFontDatabase, 
+    QColor, 
+    QPainter, 
+    QPixmap, 
+    QTransform, 
+    QCursor,
+)
 
 import items
-
 
 class SystemTrayIcon(QSystemTrayIcon):
     def __init__(self, icon, parent=None):
@@ -208,12 +219,10 @@ class ListLockButton(QAbstractButton):
 
 
 class ButtonWindow(QWidget):
-    def __init__(self, list_window, search_window):
+    def __init__(self, list_window, toggle_windows):
         super().__init__()
 
         self.list_window = list_window
-        self.search_window = search_window
-        self.show_list_window = True
         self.list_window_locked = True
 
         self.search_button = PictureButton(self)
@@ -225,7 +234,7 @@ class ButtonWindow(QWidget):
             | QtCore.Qt.FramelessWindowHint
             | QtCore.Qt.Tool
         )
-        self.search_button.clicked.connect(self.toggle_windows)
+        self.search_button.clicked.connect(toggle_windows)
 
         self.list_button = ListLockButton(self)
         self.setCursor(HandCursor())
@@ -241,16 +250,6 @@ class ButtonWindow(QWidget):
         self.setLayout(self.hlayout)
         self.hlayout.addWidget(self.search_button)
         self.hlayout.addWidget(self.list_button)
-    
-    def toggle_windows(self):
-        if self.show_list_window:
-            self.list_window.hide()
-            self.search_window.show()
-            self.search_window.activateWindow()
-        else:
-            self.search_window.hide()
-            self.list_window.show()
-        self.show_list_window = not self.show_list_window
 
 class ItemCheckbox(QCheckBox):
     def __init__(self, item_id):
@@ -332,11 +331,20 @@ class SearchWindow(QWidget):
             if item.id in items._FOUND_ITEMS_IDS:
                 checkbox.setChecked(True)
             self.flayout.addRow(checkbox, label)
-        
-    def activateWindow(self):
+    
+    def hide(self):
         self.search_bar.clear()
-        super().activateWindow()
-
+        super().hide()
+    
+    def set_toggle_function(self, toggle_function):
+        self.toggle_function = toggle_function
+    
+    def keyPressEvent(self, event: QKeyEvent) -> None:
+        if event.key() == QtCore.Qt.Key.Key_Escape:
+            # TODO: where does focus go after hiding this? can we focus D2 app?
+            self.toggle_function()
+        return super().keyPressEvent(event)
+    
 
 def main():
     app = QApplication(sys.argv)
@@ -358,8 +366,24 @@ def main():
     search_window = SearchWindow()
     search_window.move(screen_width - 670, y)
 
+    show_list_window = True
+    def toggle_windows():
+        nonlocal show_list_window
+        if show_list_window:
+            list_window.hide()
+            search_window.show()
+            search_window.activateWindow()
+        else:
+            search_window.hide()
+            list_window.show()
+        show_list_window = not show_list_window
+    
+    # TODO: figure out something to deal with this interconnected state
+    search_window.set_toggle_function(toggle_windows)
 
-    button_window = ButtonWindow(list_window, search_window)
+
+
+    button_window = ButtonWindow(list_window, toggle_windows)
     button_window.show()
     button_window.move(x + list_window.width() - button_window.width(), y - button_window.height())
     
