@@ -3,6 +3,7 @@ import datetime
 import enum
 import os
 import pathlib
+import uuid
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -258,20 +259,26 @@ def mark_missing(item_id: int):
         f.write(f"R,{item_id}\n")
 
 
-def deduplicate_todo(item_id: int):
-    _FOUND_ITEMS_IDS.remove(item_id)
+# def deduplicate_todo(item_id: int):
+#     _FOUND_ITEMS_IDS.remove(item_id)
     
-    temp_file = "found_temp.db"
-    with open("found.db", "r") as original, open(temp_file, "w") as temp:
-        for line in original:
-            if not line.startswith(f"{item_id},"):
-                temp.write(line)
+#     temp_file = "found_temp.db"
+#     with open("found.db", "r") as original, open(temp_file, "w") as temp:
+#         for line in original:
+#             if not line.startswith(f"{item_id},"):
+#                 temp.write(line)
     
-    os.replace(temp_file, "found.db")
+#     os.replace(temp_file, "found.db")
 
-
+CURRENT_FOUND_DB_VERSION = '1'
 def load_found():
     with open("found.db") as f:
+        header_line = f.readline()
+        prefix, version, _ = header_line.split(',')
+        # _ is UUID. identifier for a future feature that would be awkward to add later.
+        # version is also just future proofing the file format 
+        if prefix != 'H' or version != CURRENT_FOUND_DB_VERSION:
+            raise AssertionError('found.db file corrupted')
         for line in f.readlines():
             action, item_id_str, *_ = line.strip().split(",")
             if action == 'A':
@@ -283,7 +290,8 @@ def load_found():
 def ensure_found_file():
     found_file = pathlib.Path("found.db")
     if not found_file.is_file():
-        with open("found.db", "w"):
+        with open("found.db", "w") as f:
+            f.write(f"H,{CURRENT_FOUND_DB_VERSION},{uuid.uuid4()}")
             pass
 
 
