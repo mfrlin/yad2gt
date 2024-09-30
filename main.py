@@ -47,8 +47,8 @@ class SystemTrayIcon(QSystemTrayIcon):
 
 class HandCursor(QCursor):
     def __init__(self):
-        p = QPixmap("assets\\ohand.sprite.00.png").transformed(QTransform().fromScale(0.5, 0.5))
-        super().__init__(p, hotX=0, hotY=0)
+        p = QPixmap(str(Path(__file__).parent / 'assets' / 'ppress.sprite.01.png')).transformed(QTransform().fromScale(0.68, 0.68))
+        super().__init__(p, hotX=3, hotY=10)
 
 
 
@@ -155,8 +155,8 @@ class PictureButton(QAbstractButton):
     def __init__(self, parent):
         super().__init__(parent)
         _mirror_tranform = QTransform().scale(-1, 1)
-        self.default_picture = QPixmap("assets\\advancedstatsbutton.sprite.00.png").transformed(_mirror_tranform)
-        self.press_picture = QPixmap("assets\\advancedstatsbutton.sprite.01.png").transformed(_mirror_tranform)
+        self.default_picture = QPixmap(str(Path(__file__).parent / 'assets' / 'advancedstatsbutton.sprite.00.png')).transformed(_mirror_tranform)
+        self.press_picture = QPixmap(str(Path(__file__).parent / 'assets' / 'advancedstatsbutton.sprite.01.png')).transformed(_mirror_tranform)
         self.setPicture(self.default_picture)
         self.pressed.connect(self._mouse_press)
         self.released.connect(self._mouse_release)
@@ -183,9 +183,9 @@ class ListLockButton(QAbstractButton):
     def __init__(self, parent):
         super().__init__(parent)
         self._locked = True
-        self.locked_picture = QPixmap("assets\\lootbody.sprite.00.png")
-        self.pressed_picture = QPixmap("assets\\lootbody.sprite.01.png")
-        self.unlocked_picture = QPixmap("assets\\lootbody.sprite.02.png")
+        self.locked_picture = QPixmap(str(Path(__file__).parent / 'assets' / 'lootbody.sprite.00.png'))
+        self.pressed_picture = QPixmap(str(Path(__file__).parent / 'assets' / 'lootbody.sprite.01.png'))
+        self.unlocked_picture = QPixmap(str(Path(__file__).parent / 'assets' / 'lootbody.sprite.02.png'))
         self._default_picture = self.locked_picture
         self.setPicture(self.locked_picture)
         self.pressed.connect(self._mouse_press)
