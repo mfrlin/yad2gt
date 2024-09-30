@@ -1,15 +1,21 @@
 # Yet Another Diablo 2 (Resurrected) Grail Tracker
 
 
-## Running the program
+## Running and building from source
 
 Install [Poetry](https://python-poetry.org/)
 
-Then in root directory
+Then in root directory:
 
 `poetry install`
 
 `poetry run python main.py`
+
+`poetry run pyinstaller main.spec`
+
+## Downloading
+
+Look for a release on GitHub. Currently in "pre alpha" and only built and tested on Windows 10, x64 processor.
 
 ## Features
 
