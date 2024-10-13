@@ -15,7 +15,11 @@ Then in root directory:
 
 ## Downloading
 
-Look for a release on GitHub. Currently in "pre alpha" and only built and tested on Windows 10, x64 processor.
+Look in a [releases](https://github.com/mfrlin/yad2gt/releases) on GitHub. v0.1.0 only built and tested on Windows 10, x64 processor.
+
+#### Why is program so large?
+
+Unfortunately that's just the way it is with programs written in Python. There are plans to improve this in the future.
 
 ## Features
 
