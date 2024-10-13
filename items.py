@@ -30,7 +30,7 @@ class Slot(enum.Enum):
     JEWEL = 11
     RUNE = 12
 
-
+# position in list is "category" number
 CATEGORIES = [
     "Angelic Raiment",  # 0
     "Arcanna's Tricks",  # 1
@@ -65,113 +65,9 @@ CATEGORIES = [
     "Tal Rasha's Wrappings",  # 30
     "Trang-Oul's Avatar",  # 31
     "Runes",  # 32
-    "Rings",  # 33
-    "Amulets",  # 34
-    "Charms",  # 35
-    "Jewels",  # 36
-    "Amazon",  # 37
-    "Assassin",  # 38
-    "Necromancer",  # 39
-    "Barbarian",  # 40
-    "Sorceress",  # 41
-    "Druid",  # 42
-    "Paladin",  # 43
-    "Normal Unique Armor",  # 44
-    "",  # 45
-    "",  # 46
-    "",  # 47
-    "",  # 48
-    "",  # 49
-    "",  # 5
+    "Uncategorized TODO",  # 33 
 ]
-
-
-# CATEGORIES = {
-#     'Unique Items': {
-#         'Rings': _RINGS,
-#         'Amulets': _AMULETS,
-#         'Charms': _CHARMS,
-#         'Jewels': _JEWELS,
-#         'Class-Specific Items': {
-#             'Amazon': _AMAZON_SPECIFIC,
-#             'Assassin': _ASSASSIN_SPECIFIC,
-#             'Necromancer': _NECROMANCER_SPECIFIC,
-#             'Barbarian': _BARBARIAN_SPECIFIC,
-#             'Sorceress': _SORCERESS_SPECIFIC,
-#             'Druid': _DRUID_SPECIFIC,
-#             'Paladin': _PALADIN_SPECIFIC,
-#         },
-#         'Normal Unique Armor': {
-#             'Helms': _NORMAL_UNIQUE_HELMS,
-#             'Armor': _NORMAL_UNIQUE_ARMOR,
-#             'Shields': _NORMAL_UNIQUE_SHIELDS,
-#             'Gloves': _NORMAL_UNIQUE_GLOVES,
-#             'Boots': _NORMAL_UNIQUE_BOOTS,
-#             'Belts': _NORMAL_UNIQUE_BELTS,
-#         },
-#         'Exceptional Unique Armor': {
-#             'Helms': _EXCEPTIONAL_UNIQUE_HELMS,
-#             'Armor': _EXCEPTIONAL_UNIQUE_ARMOR,
-#             'Shields': _EXCEPTIONAL_UNIQUE_SHIELDS,
-#             'Gloves': _EXCEPTIONAL_UNIQUE_GLOVES,
-#             'Boots': _EXCEPTIONAL_UNIQUE_BOOTS,
-#             'Belts': _EXCEPTIONAL_UNIQUE_BELTS,
-#         },
-#         'Elite Unique Armor': {
-#             'Helms': _ELITE_UNIQUE_HELMS,
-#             'Armor': _ELITE_UNIQUE_ARMOR,
-#             'Shields': _ELITE_UNIQUE_SHIELDS,
-#             'Gloves': _ELITE_UNIQUE_GLOVES,
-#             'Boots': _ELITE_UNIQUE_BOOTS,
-#             'Belts': _ELITE_UNIQUE_BELTS,
-#         },
-#         'Normal Unique Weapons': {
-#             'Axes': _NORMAL_UNIQUE_AXES,
-#             'Bows': _NORMAL_UNIQUE_BOWS,
-#             'Crossbows': _NORMAL_UNIQUE_CROSSBOWS,
-#             'Daggers': _NORMAL_UNIQUE_DAGGERS,
-#             'Maces': _NORMAL_UNIQUE_MACES,
-#             'Polearms': _NORMAL_UNIQUE_POLEARMS,
-#             'Scepters': _NORMAL_UNIQUE_SCEPTERS,
-#             'Spears': _NORMAL_UNIQUE_SPEARS,
-#             'Staves': _NORMAL_UNIQUE_STAVES,
-#             'Swords': _NORMAL_UNIQUE_SWORDS,
-#             'Wands': _NORMAL_UNIQUE_WANDS,
-#         },
-#         'Exceptional Unique Weapons': {
-#             'Axes': _EXCEPTIONAL_UNIQUE_AXES,
-#             'Bows': _EXCEPTIONAL_UNIQUE_BOWS,
-#             'Crossbows': _EXCEPTIONAL_UNIQUE_CROSSBOWS,
-#             'Daggers': _EXCEPTIONAL_UNIQUE_DAGGERS,
-#             'Maces': _EXCEPTIONAL_UNIQUE_MACES,
-#             'Polearms': _EXCEPTIONAL_UNIQUE_POLEARMS,
-#             'Scepters': _EXCEPTIONAL_UNIQUE_SCEPTERS,
-#             'Spears': _EXCEPTIONAL_UNIQUE_SPEARS,
-#             'Staves': _EXCEPTIONAL_UNIQUE_STAVES,
-#             'Swords': _EXCEPTIONAL_UNIQUE_SWORDS,
-#             'Throwing Weapons': _EXCEPTIONAL_UNIQUE_THROWING_WEAPONS,
-#             'Wands': _EXCEPTIONAL_UNIQUE_WANDS,
-#         },
-#         'Elite Unique Weapons': {
-#             'Axes': _ELITE_UNIQUE_AXES,
-#             'Bows': _ELITE_UNIQUE_BOWS,
-#             'Crossbows': _ELITE_UNIQUE_CROSSBOWS,
-#             'Daggers': _ELITE_UNIQUE_DAGGERS,
-#             'Javelins': _ELITE_UNIQUE_JAVELINS,
-#             'Maces': _ELITE_UNIQUE_MACES,
-#             'Polearms': _ELITE_UNIQUE_POLEARMS,
-#             'Scepters': _ELITE_UNIQUE_SCEPTERS,
-#             'Spears': _ELITE_UNIQUE_SPEARS,
-#             'Staves': _ELITE_UNIQUE_STAVES,
-#             'Swords': _ELITE_UNIQUE_SWORDS,
-#             'Throwing Weapons': _ELITE_UNIQUE_THROWING_WEAPONS,
-#             'Wands': _ELITE_UNIQUE_WANDS,
-#         },
-#     },
-#     'Sets': {
-#         'Angelic Raiment': _ANGELIC_RAIMENT,
-#     }
-# }
+CATEGORY_ITEMS = [set() for _ in range(len(CATEGORIES))]
 
 
 @dataclass
@@ -194,7 +90,6 @@ def prepare_words(text: str) -> list[str]:
 _SEARCH_STRUCTURE: dict[str : set[int]] = {}
 _ITEMS: list[Item] = []
 
-
 def _load_items(file_name: str):
     with open(file_name) as items_file:
         reader = csv.DictReader(items_file)
@@ -204,6 +99,7 @@ def _load_items(file_name: str):
             row["rarity"] = Rarity(int(row["rarity"]))
             row["category"] = int(row["category"])
             _ITEMS.append(Item(**row))
+            CATEGORY_ITEMS[row["category"]].add(row["id"])
 
 _load_items(Path(__file__).parent / 'assets' / 'items.csv')
 

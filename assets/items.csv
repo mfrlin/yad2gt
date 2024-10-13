@@ -32,391 +32,391 @@ id,name,base,slot,rarity,category
 30,Jah,Rune,12,1,32
 31,Cham,Rune,12,1,32
 32,Zod,Rune,12,1,32
-33,Nagelring,Ring,9,5,0
-34,Manald Heal,Ring,9,5,0
-35,Stone of Jordan,Ring,9,5,0
-36,Dwarf Star,Ring,9,5,0
-37,Raven Frost,Ring,9,5,0
-38,Bul-Kathos' Wedding Band,Ring,9,5,0
-39,Carrion Wind,Ring,9,5,0
-40,Nature's Peace,Ring,9,5,0
-41,Wisp Projector,Ring,9,5,0
-42,Nokozan Relic,Amulet,8,5,0
-43,The Eye of Etlich,Amulet,8,5,0
-44,The Mahim-Oak Curio,Amulet,8,5,0
-45,Saracen's Chance,Amulet,8,5,0
-46,The Cat's Eye,Amulet,8,5,0
-47,Crescent Moon,Amulet,8,5,0
-48,Atma's Scarab,Amulet,8,5,0
-49,The Rising Sun,Amulet,8,5,0
-50,Highlord's Wrath,Amulet,8,5,0
-51,Mara's Kaleidoscope,Amulet,8,5,0
-52,Seraph's Hymn,Amulet,8,5,0
-53,Metalgrid,Amulet,8,5,0
-54,Annihilus,Small Charm,10,5,0
-55,Hellfire Torch,Large Charm,10,5,0
-56,Gheed's Fortune,Grand Charm,10,5,0
-57,Black Cleft,Grand Charm,10,5,0
-58,Cold Rupture,Grand Charm,10,5,0
-59,Bone Break,Grand Charm,10,5,0
-60,Crack of The Heavens,Grand Charm,10,5,0
-61,Flame Rift,Grand Charm,10,5,0
-62,Rotting Fissure,Grand Charm,10,5,0
-63,Rainbow Facet Fire Level,Jewel,11,5,0
-64,Rainbow Facet Fire Die,Jewel,11,5,0
-65,Rainbow Facet Cold Level,Jewel,11,5,0
-66,Rainbow Facet Cold Die,Jewel,11,5,0
-67,Rainbow Facet Lightning Level,Jewel,11,5,0
-68,Rainbow Facet Lightning Die,Jewel,11,5,0
-69,Rainbow Facet Poison Level,Jewel,11,5,0
-70,Rainbow Facet Poison Die,Jewel,11,5,0
-71,Biggin's Bonnet,Cap,1,5,0
-72,Tarnhelm,Skull Cap,1,5,0
-73,Coif of Glory,Helm,1,5,0
-74,Duskdeep,Full Helm,1,5,0
-75,Howltusk,Great Helm,1,5,0
-76,The Face of Horror,Mask,1,5,0
-77,Undead Crown,Crown,1,5,0
-78,Wormskull,Bone Helm,1,5,0
-79,Peasant Crown,War Hat,1,5,0
-80,Rockstopper,Sallet,1,5,0
-81,Stealskull,Casque,1,5,0
-82,Darksight Helm,Basinet,1,5,0
-83,Valkyrie Wing,Winged Helm,1,5,0
-84,Blackhorn's Face,Death Mask,1,5,0
-85,Crown of Thieves,Grand Crown,1,5,0
-86,Vampire Gaze,Grim Helm,1,5,0
-87,Kira's Guardian,Tiara,1,5,0
-88,Harlequin Crest,Shako,1,5,0
-89,Steel Shade,Armet,1,5,0
-90,Veil of Steel,Spired Helm,1,5,0
-91,Nightwing's Veil,Spired Helm,1,5,0
-92,Andariel's Visage,Demonhead,1,5,0
-93,Crown of Ages,Corona,1,5,0
-94,Giant Skull,Bone Visage,1,5,0
-95,Griffon's Eye,Diadem,1,5,0
-96,Greyform,Quilted Armor,2,5,0
-97,Blinkbat's Form,Leather Armor,2,5,0
-98,The Centurion,Hard Leather Armor,2,5,0
-99,Twitchroe,Studded Leather,2,5,0
-100,Darkglow,Ring Mail,2,5,0
-101,Hawkmail,Scale Mail,2,5,0
-102,Venom Ward,Breast Plate,2,5,0
-103,Sparkling Mail,Chain Mail,2,5,0
-104,Iceblink,Splint Mail,2,5,0
-105,Heavenly Garb,Light Plate,2,5,0
-106,Rockfleece,Field Plate,2,5,0
-107,Boneflesh,Plate Mail,2,5,0
-108,Rattlecage,Gothic Plate,2,5,0
-109,Goldskin,Full Plate Mail,2,5,0
-110,Silks of the Victor,Ancient Armor,2,5,0
-111,The Spirit Shroud,Ghost Armor,2,5,0
-112,Skin of the Vipermagi,Serpentskin Armor,2,5,0
-113,Skin of the Flayed One,Demonhide Armor,2,5,0
-114,Iron Pelt,Trellised Armor,2,5,0
-115,Crow Caw,Tigulated Mail,2,5,0
-116,Spirit Forge,Linked Mail,2,5,0
-117,Duriel's Shell,Cuirass,2,5,0
-118,Shaftstop,Mesh Armor,2,5,0
-119,Skullder's Ire,Russet Armor,2,5,0
-120,Que-Hegan's Wisdom,Mage Plate,2,5,0
-121,Toothrow,Sharktooth Armor,2,5,0
-122,Guardian Angel,Templar Coat,2,5,0
-123,Atma's Wail,Embossed Plate,2,5,0
-124,Black Hades,Chaos Armor,2,5,0
-125,Corpsemourn,Ornate Plate,2,5,0
-126,Ormus' Robes,Dusk Shroud,2,5,0
-127,The Gladiator's Bane,Wire Fleece,2,5,0
-128,Arkaine's Valor,Balrog Skin,2,5,0
-129,Leviathan,Kraken Shell,2,5,0
-130,Steel Carapace,Shadow Plate,2,5,0
-131,Templar's Might,Sacred Armor,2,5,0
-132,Tyrael's Might,Sacred Armor,2,5,0
-133,Pelta Lunata,Buckler,7,5,0
-134,Umbral Disk,Small Shield,7,5,0
-135,Stormguild,Large Shield,7,5,0
-136,Steelclash,Kite Shield,7,5,0
-137,Swordback Hold,Spiked Shield,7,5,0
-138,Bverrit Keep,Tower Shield,7,5,0
-139,Wall of the Eyeless,Bone Shield,7,5,0
-140,The Ward,Gothic Shield,7,5,0
-141,Visceratuant,Defender,7,5,0
-142,Moser's Blessed Circle,Round Shield,7,5,0
-143,Stormchaser,Scutum,7,5,0
-144,Tiamat's Rebuke,Dragon Shield,7,5,0
-145,Lance Guard,Barbed Shield,7,5,0
-146,Gerke's Sanctuary,Pavise,7,5,0
-147,Lidless Wall,Grim Shield,7,5,0
-148,Radamant's Sphere,,7,5,0
-149,Blackoak Shield,Luna,7,5,0
-150,Stormshield,Monarch,7,5,0
-151,Spike Thorn,Blade Barrier,7,5,0
-152,Medusa's Gaze,Aegis,7,5,0
-153,Head Hunter's Glory,Troll Nest,7,5,0
-154,Spirit Ward,Ward,7,5,0
-155,The Hand of Broc,Leather Gloves,4,5,0
-156,Bloodfist,Heavy Gloves,4,5,0
-157,Chance Guards,Chain Gloves,4,5,0
-158,Magefist,Light Gauntlets,4,5,0
-159,Frostburn,Gauntlets,4,5,0
-160,Venom Grip,Demonhide Gloves,4,5,0
-161,Gravepalm,Sharkskin Gloves,4,5,0
-162,Ghoulhide,Heavy Bracers,4,5,0
-163,Lava Gout,Battle Gauntlets,4,5,0
-164,Hellmouth,War Gauntlets,4,5,0
-165,Dracul's Grasp,Vampirebone Gloves,4,5,0
-166,Soul Drainer,Vambraces,4,5,0
-167,Steelrend,Ogre Gauntlets,4,5,0
-168,Hotspur,Boots,5,5,0
-169,Gorefoot,Heavy Boots,5,5,0
-170,Treads of Cthon,Chain Boots,5,5,0
-171,Goblin Toe,Light Plated Boots,5,5,0
-172,Tearhaunch,Greaves,5,5,0
-173,Infernostride,Demonhide Boots,5,5,0
-174,Waterwalk,Sharkskin Boots,5,5,0
-175,Silkweave,Mesh Boots,5,5,0
-176,War Traveler,Battle Boots,5,5,0
-177,Gore Rider,War Boots,5,5,0
-178,Sandstorm Trek,Scarabshell Boots,5,5,0
-179,Marrowwalk,Boneweave Boots,5,5,0
-180,Shadow Dancer,Myrmidon Greaves,5,5,0
-181,Lenymo,Sash,3,5,0
-182,Snakecord,Light Belt,3,5,0
-183,Nightsmoke,Belt,3,5,0
-184,Goldwrap,Heavy Belt,3,5,0
-185,Bladebuckle,Plated Belt,3,5,0
-186,String of Ears,Demonhide Sash,3,5,0
-187,Razortail,Sharkskin Belt,3,5,0
-188,Gloom's Trap,Mesh Belt,3,5,0
-189,Snowclash,Battle Belt,3,5,0
-190,Thundergod's Vigor,War Belt,3,5,0
-191,Arachnid Mesh,Spiderweb Sash,3,5,0
-192,Nosferatu's Coil,Vampirefang Belt,3,5,0
-193,Verdungo's Heary Cord,Mithril Coil,3,5,0
-194,Stoneraven,Matriarchal Spear,6,5,0
-195,Lycander's Flank,Ceremonial Pike,6,5,0
-196,Lycander's Aim,Ceremonial Bow,6,5,0
-197,Titan's Revenge,Ceremonial Javelin,6,5,0
-198,Thunderstroke,Matriarchal Javelin,6,5,0
-199,Blood Raven's Charge,Matriarchal Bow,6,5,0
-200,Shadow Killer,Battle Cestus,6,5,0
-201,Bartuc's Cut-Throat,Greater Talons,6,5,0
-202,Jade Talon,Wrist Sword,6,5,0
-203,Firelizard's Talons,,6,5,0
-204,Homunculus,Hierophant Trophy,7,5,0
-205,Darkforce Spawn,Bloodlord Skull,7,5,0
-206,Boneflame,Succubus Skull,7,5,0
-207,Arreat's Face,Slayer Guard,1,5,0
-208,Wolfhowl,Fury Visor,1,5,0
-209,Demonhorn's Edge,Destroyer Helm,1,5,0
-210,Halaberd's Reign,Conqueror Crown,1,5,0
-211,The Oculus,Swirling Crystal,6,5,0
-212,Eschuta's Temper,Eldritch Orb,6,5,0
-213,Death's Fathom,Dimensional Shard,6,5,0
-214,Jalal's Mane,Totemic Mask,1,5,0
-215,Cerebus's Bite,Blood Spirit,1,5,0
-216,Ravenlore,Sky Spirit,1,5,0
-217,Spirit Keeper,Earth Spirit,1,5,0
-218,Alma Negra,Sacred Rondache,7,5,0
-219,Herald of Zakarum,Gilded Shield,7,5,0
-220,Dragonscale,Zakarum Shield,7,5,0
-221,The Gnasher,Hand Axe,6,5,0
-222,Deathspade,Axe,6,5,0
-223,Bladebone,Double Axe,6,5,0
-224,Skull Splitter,Military Pick,6,5,0
-225,Rakescar,War Axe,6,5,0
-226,Axe of Fechmar,Large Axe,6,5,0
-227,Goreshovel,Broad Axe,6,5,0
-228,The Chieftain,Battle Axe,6,5,0
-229,Brainhew,Great Axe,6,5,0
-230,Humongous,Giant Axe,6,5,0
-231,Coldkill,Hatchet,6,5,0
-232,Butcher's Pupil,Cleaver,6,5,0
-233,Islestrike,Twin Axe,6,5,0
-234,Pompeii's Wrath,Crowbill,6,5,0
-235,Guardian Naga,Naga,6,5,0
-236,Warlord's Trust,Military Axe,6,5,0
-237,Spellsteel,Bearder Axe,6,5,0
-238,Stormrider,Tabar,6,5,0
-239,Boneslayer Blade,Gothic Axe,6,5,0
-240,The Minotaur,Ancient Axe,6,5,0
-241,Razor's Edge,Tomahawk,6,5,0
-242,Rune Master,Ettin Axe,6,5,0
-243,Cranebeak,War Spike,6,5,0
-244,Death Cleaver,Berserker Axe,6,5,0
-245,Ethereal Edge,Silver-Edged Axe,6,5,0
-246,Hellslayer,Decapitator,6,5,0
-247,Messerschmidt's Reaver,Champion Axe,6,5,0
-248,Executioner's Justice,Glorious Axe,6,5,0
-249,Pluckeye,Short Bow,6,5,0
-250,Witherstring,Hunter's Bow,6,5,0
-251,Raven Claw,Long Bow,6,5,0
-252,Rogue's Bow,Composite Bow,6,5,0
-253,Stormstrike,Short Battle Bow,6,5,0
-254,Wizendraw,Long Battle Bow,6,5,0
-255,Hellclap,Short War Bow,6,5,0
-256,Blastbark,Long War Bow,6,5,0
-257,Skystrike,Edge Bow,6,5,0
-258,Riphook,Razor Bow,6,5,0
-259,Kuko Shakaku,Cedar Bow,6,5,0
-260,Endlesshail,Double Bow,6,5,0
-261,Witchwild String,Short Siege Bow,6,5,0
-262,Cliffkiller,Large Siege Bow,6,5,0
-263,Magewrath,Rune Bow,6,5,0
-264,Goldstrike Arch,Gothic Bow,6,5,0
-265,Eaglehorn,Crusader Bow,6,5,0
-266,Widowmaker,Ward Bow,6,5,0
-267,Windforce,Hydra Bow,6,5,0
-268,Leadcrow,Light Crossbow,6,5,0
-269,Ichorsting,Crossbow,6,5,0
-270,Hellcast,Heavy Crossbow,6,5,0
-271,Doomslinger,Repeating Crossbow,6,5,0
-272,Langer Briser,Arbalest,6,5,0
-273,Pus Spitter,Siege Crossbow,6,5,0
-274,Buriza-Do Kyanon,Ballista,6,5,0
-275,Demon Machine,Chu-Ko-Nu,6,5,0
-276,Hellrack,Colossus Crossbow,6,5,0
-277,Gut Siphon,Demon Crossbow,6,5,0
-278,Gull,Dagger,6,5,0
-279,The Diggler,Dirk,6,5,0
-280,The Jade Tan Do,Kris,6,5,0
-281,Spectral Shard,Blade,6,5,0
-282,Spineripper,Poignard,6,5,0
-283,Heart Carver,Rondel,6,5,0
-284,Blackbog's Sharp,Cinquedeas,6,5,0
-285,Stormspike,Stiletto,6,5,0
-286,Wizardspike,Bone Knife,6,5,0
-287,Fleshripper,Fanged Knife,6,5,0
-288,Ghostflame,Legend Spike,6,5,0
-289,Felloak,Club,6,5,0
-290,Stoutnail,Spiked Club,6,5,0
-291,Crushflange,Mace,6,5,0
-292,Bloodrise,Morning Star,6,5,0
-293,The General's Tan Do Li Ga,Flail,6,5,0
-294,Ironstone,War Hammer,6,5,0
-295,Bonesnap,Maul,6,5,0
-296,Steeldiver,Great Maul,6,5,0
-297,Dark Clan Crusher,Cudgel,6,5,0
-298,Fleshrender,Barbed Club,6,5,0
-299,Sureshrill Frost,Flanged Mace,6,5,0
-300,Moonfall,Jagged Star,6,5,0
-301,Baezil's Vortex,Knout,6,5,0
-302,Earthshaker,Battle Hammer,6,5,0
-303,Bloodtree Stump,War Club,6,5,0
-304,The Gavel of Pain,Martel de Fer,6,5,0
-305,Demon's Arch,Balrog Spear,6,5,0
-306,Wraith Flight,Ghost Glaive,6,5,0
-307,Gargoyle's Bite,Winged Harpoon,6,5,0
-308,Nord's Tenderizer,Truncheon,6,5,0
-309,Demon Limb,Tyrant Club,6,5,0
-310,Baranar's Star,Devil Star,6,5,0
-311,Horizon's Tornado,Scourge,6,5,0
-312,Stormlash,Scourge,6,5,0
-313,Stone Crusher,Legendary Mallet,6,5,0
-314,Schaefer's Hammer,Legendary Mallet,6,5,0
-315,Windhammer,Ogre Maul,6,5,0
-316,Earth Shifter,Thunder Maul,6,5,0
-317,The Cranium Basher,Thunder Maul,6,5,0
-318,Dimoak's Hew,Bardiche,6,5,0
-319,Steelgoad,Voulge,6,5,0
-320,Soul Harvest,Scythe,6,5,0
-321,The Battlebranch,Poleaxe,6,5,0
-322,Woestave,Halberd,6,5,0
-323,The Grim Reaper,War Scythe,6,5,0
-324,The Meat Scraper,Lochaber Axe,6,5,0
-325,Blackleach Blade,Bill,6,5,0
-326,Athena's Wrath,Battle Scythe,6,5,0
-327,Pierre Tombale Couant,Partizan,6,5,0
-328,Husoldal Evo,Bec-De-Corbin,6,5,0
-329,Grim's Burning Dead,Grim Scythe,6,5,0
-330,Bonehew,Ogre Axe,6,5,0
-331,The Reaper's Toll,Thresher,6,5,0
-332,Tomb Reaver,Cryptic Axe,6,5,0
-333,Stormspire,Giant Thresher,6,5,0
-334,Knell Striker,Scepter,6,5,0
-335,Rusthandle,Grand Scepter,6,5,0
-336,Stormeye,War Scepter,6,5,0
-337,Zakarum's Hand,Rune Scepter,6,5,0
-338,The Fetid Sprinkler,Holy Water Sprinkler,6,5,0
-339,Hand of Blessed Light,Divine Scepter,6,5,0
-340,Heaven's Light,Mighty Scepter,6,5,0
-341,The Redeemer,Mighty Scepter,6,5,0
-342,Astreon's Iron Ward,Caduceus,6,5,0
-343,The Dragon Chang,Spear,6,5,0
-344,Razortine,Trident,6,5,0
-345,Bloodthief,Brandistock,6,5,0
-346,Lance of Yaggai,Spetum,6,5,0
-347,The Tannr Gorerod,Pike,6,5,0
-348,The Impaler,War Spear,6,5,0
-349,Kelpie Snare,Fuscina,6,5,0
-350,Soulfeast Tine,War Fork,6,5,0
-351,Hone Sundan,Yari,6,5,0
-352,Spire of Honor,Lance,6,5,0
-353,Arioc's Needle,Hyperion Spear,6,5,0
-354,Viperfork,Mancatcher,6,5,0
-355,Steel Pillar,War Pike,6,5,0
-356,Bane Ash,Short Staff,6,5,0
-357,Serpent Lord,Long Staff,6,5,0
-358,Spire of Lazarus,Gnarled Staff,6,5,0
-359,The Salamander,Battle Staff,6,5,0
-360,The Iron Jang Bong,War Staff,6,5,0
-361,Razorswitch,Jo Staff,6,5,0
-362,Ribcracker,Quarterstaff,6,5,0
-363,Chromatic Ire,Cedar Staff,6,5,0
-364,Warpspear,Gothic Staff,6,5,0
-365,Skull Collector,Rune Staff,6,5,0
-366,Ondal's Wisodm,Elder Staff,6,5,0
-367,Mang Song's Lesson,Archon Staff,6,5,0
-368,Rixot's Kenn,Short Sword,6,5,0
-369,Blood Crescent,Scimitar,6,5,0
-370,Skewer of Krinitiz,Sabre,6,5,0
-371,Gleamscythe,Falchion,6,5,0
-372,Griswold's Edge,Broad Sword,6,5,0
-373,Hellplague,Long Sword,6,5,0
-374,Culwen's Point,War Sword,6,5,0
-375,Shadowfang,Two-Handed Sword,6,5,0
-376,Soulflay,Claymore,6,5,0
-377,Kinemil's Awl,Giant Sword,6,5,0
-378,Blacktongue,Bastard Sword,6,5,0
-379,Ripsaw,Flamberge,6,5,0
-380,The Patriarch,Great Sword,6,5,0
-381,Bloodletter,Gladius,6,5,0
-382,Coldsteel Eye,Cutlass,6,5,0
-383,Hexfire,Shamshir,6,5,0
-384,Blade of Ali Baba,Tulwar,6,5,0
-385,Ginther's Rift,Dimensional Blade,6,5,0
-386,Headstriker,Battle Sword,6,5,0
-387,Plague Bearer,Rune Sword,6,5,0
-388,The Atlantean,Ancient Sword,6,5,0
-389,Crainte Vomir,Espandon,6,5,0
-390,Bing Sz Wang,Dacian Falx,6,5,0
-391,The Vile Husk,Tusk Sword,6,5,0
-392,Cloudcrack,Gothic Sword,6,5,0
-393,Todesfaelle Flamme,Zweihander,6,5,0
-394,Swordguard,Executioner Sword,6,5,0
-395,Djinn Slayer,Ataghan,6,5,0
-396,Bloodmoon,Elegant Blade,6,5,0
-397,Lightsabre,Phase Blade,6,5,0
-398,Azurewrath,Phase Blade,6,5,0
-399,Frostwind,Cryptic Sword,6,5,0
-400,Flamebellow,Balrog Blade,6,5,0
-401,Doombringer,Champion Sword,6,5,0
-402,The Grandfather,Colossus Blade,6,5,0
-403,Deathbit,Battle Dart,6,5,0
-404,The Scalper,Francisca,6,5,0
-405,Warshrike,Winged Knife,6,5,0
-406,Gimmershred,Flying Axe,6,5,0
-407,Lacerator,Winged Axe,6,5,0
-408,Torch of Iro,Wand,6,5,0
-409,Maelstrom,Yew Wand,6,5,0
-410,Gravenspine,Bone Wand,6,5,0
-411,Ume's Lament,Grim Wand,6,5,0
-412,Suicide Branch,Burnt Wand,6,5,0
-413,Carin Shard,Petrified Wand,6,5,0
-414,Arm of King Leoric,Tomb Wand,6,5,0
-415,Blackhand Key,Grave Wand,6,5,0
-416,Boneshade,Lich Wand,6,5,0
-417,Death's Web,Unearthed Wand,6,5,0
+33,Nagelring,Ring,9,5,33
+34,Manald Heal,Ring,9,5,33
+35,Stone of Jordan,Ring,9,5,33
+36,Dwarf Star,Ring,9,5,33
+37,Raven Frost,Ring,9,5,33
+38,Bul-Kathos' Wedding Band,Ring,9,5,33
+39,Carrion Wind,Ring,9,5,33
+40,Nature's Peace,Ring,9,5,33
+41,Wisp Projector,Ring,9,5,33
+42,Nokozan Relic,Amulet,8,5,33
+43,The Eye of Etlich,Amulet,8,5,33
+44,The Mahim-Oak Curio,Amulet,8,5,33
+45,Saracen's Chance,Amulet,8,5,33
+46,The Cat's Eye,Amulet,8,5,33
+47,Crescent Moon,Amulet,8,5,33
+48,Atma's Scarab,Amulet,8,5,33
+49,The Rising Sun,Amulet,8,5,33
+50,Highlord's Wrath,Amulet,8,5,33
+51,Mara's Kaleidoscope,Amulet,8,5,33
+52,Seraph's Hymn,Amulet,8,5,33
+53,Metalgrid,Amulet,8,5,33
+54,Annihilus,Small Charm,10,5,33
+55,Hellfire Torch,Large Charm,10,5,33
+56,Gheed's Fortune,Grand Charm,10,5,33
+57,Black Cleft,Grand Charm,10,5,33
+58,Cold Rupture,Grand Charm,10,5,33
+59,Bone Break,Grand Charm,10,5,33
+60,Crack of The Heavens,Grand Charm,10,5,33
+61,Flame Rift,Grand Charm,10,5,33
+62,Rotting Fissure,Grand Charm,10,5,33
+63,Rainbow Facet Fire Level,Jewel,11,5,33
+64,Rainbow Facet Fire Die,Jewel,11,5,33
+65,Rainbow Facet Cold Level,Jewel,11,5,33
+66,Rainbow Facet Cold Die,Jewel,11,5,33
+67,Rainbow Facet Lightning Level,Jewel,11,5,33
+68,Rainbow Facet Lightning Die,Jewel,11,5,33
+69,Rainbow Facet Poison Level,Jewel,11,5,33
+70,Rainbow Facet Poison Die,Jewel,11,5,33
+71,Biggin's Bonnet,Cap,1,5,33
+72,Tarnhelm,Skull Cap,1,5,33
+73,Coif of Glory,Helm,1,5,33
+74,Duskdeep,Full Helm,1,5,33
+75,Howltusk,Great Helm,1,5,33
+76,The Face of Horror,Mask,1,5,33
+77,Undead Crown,Crown,1,5,33
+78,Wormskull,Bone Helm,1,5,33
+79,Peasant Crown,War Hat,1,5,33
+80,Rockstopper,Sallet,1,5,33
+81,Stealskull,Casque,1,5,33
+82,Darksight Helm,Basinet,1,5,33
+83,Valkyrie Wing,Winged Helm,1,5,33
+84,Blackhorn's Face,Death Mask,1,5,33
+85,Crown of Thieves,Grand Crown,1,5,33
+86,Vampire Gaze,Grim Helm,1,5,33
+87,Kira's Guardian,Tiara,1,5,33
+88,Harlequin Crest,Shako,1,5,33
+89,Steel Shade,Armet,1,5,33
+90,Veil of Steel,Spired Helm,1,5,33
+91,Nightwing's Veil,Spired Helm,1,5,33
+92,Andariel's Visage,Demonhead,1,5,33
+93,Crown of Ages,Corona,1,5,33
+94,Giant Skull,Bone Visage,1,5,33
+95,Griffon's Eye,Diadem,1,5,33
+96,Greyform,Quilted Armor,2,5,33
+97,Blinkbat's Form,Leather Armor,2,5,33
+98,The Centurion,Hard Leather Armor,2,5,33
+99,Twitchroe,Studded Leather,2,5,33
+100,Darkglow,Ring Mail,2,5,33
+101,Hawkmail,Scale Mail,2,5,33
+102,Venom Ward,Breast Plate,2,5,33
+103,Sparkling Mail,Chain Mail,2,5,33
+104,Iceblink,Splint Mail,2,5,33
+105,Heavenly Garb,Light Plate,2,5,33
+106,Rockfleece,Field Plate,2,5,33
+107,Boneflesh,Plate Mail,2,5,33
+108,Rattlecage,Gothic Plate,2,5,33
+109,Goldskin,Full Plate Mail,2,5,33
+110,Silks of the Victor,Ancient Armor,2,5,33
+111,The Spirit Shroud,Ghost Armor,2,5,33
+112,Skin of the Vipermagi,Serpentskin Armor,2,5,33
+113,Skin of the Flayed One,Demonhide Armor,2,5,33
+114,Iron Pelt,Trellised Armor,2,5,33
+115,Crow Caw,Tigulated Mail,2,5,33
+116,Spirit Forge,Linked Mail,2,5,33
+117,Duriel's Shell,Cuirass,2,5,33
+118,Shaftstop,Mesh Armor,2,5,33
+119,Skullder's Ire,Russet Armor,2,5,33
+120,Que-Hegan's Wisdom,Mage Plate,2,5,33
+121,Toothrow,Sharktooth Armor,2,5,33
+122,Guardian Angel,Templar Coat,2,5,33
+123,Atma's Wail,Embossed Plate,2,5,33
+124,Black Hades,Chaos Armor,2,5,33
+125,Corpsemourn,Ornate Plate,2,5,33
+126,Ormus' Robes,Dusk Shroud,2,5,33
+127,The Gladiator's Bane,Wire Fleece,2,5,33
+128,Arkaine's Valor,Balrog Skin,2,5,33
+129,Leviathan,Kraken Shell,2,5,33
+130,Steel Carapace,Shadow Plate,2,5,33
+131,Templar's Might,Sacred Armor,2,5,33
+132,Tyrael's Might,Sacred Armor,2,5,33
+133,Pelta Lunata,Buckler,7,5,33
+134,Umbral Disk,Small Shield,7,5,33
+135,Stormguild,Large Shield,7,5,33
+136,Steelclash,Kite Shield,7,5,33
+137,Swordback Hold,Spiked Shield,7,5,33
+138,Bverrit Keep,Tower Shield,7,5,33
+139,Wall of the Eyeless,Bone Shield,7,5,33
+140,The Ward,Gothic Shield,7,5,33
+141,Visceratuant,Defender,7,5,33
+142,Moser's Blessed Circle,Round Shield,7,5,33
+143,Stormchaser,Scutum,7,5,33
+144,Tiamat's Rebuke,Dragon Shield,7,5,33
+145,Lance Guard,Barbed Shield,7,5,33
+146,Gerke's Sanctuary,Pavise,7,5,33
+147,Lidless Wall,Grim Shield,7,5,33
+148,Radamant's Sphere,,7,5,33
+149,Blackoak Shield,Luna,7,5,33
+150,Stormshield,Monarch,7,5,33
+151,Spike Thorn,Blade Barrier,7,5,33
+152,Medusa's Gaze,Aegis,7,5,33
+153,Head Hunter's Glory,Troll Nest,7,5,33
+154,Spirit Ward,Ward,7,5,33
+155,The Hand of Broc,Leather Gloves,4,5,33
+156,Bloodfist,Heavy Gloves,4,5,33
+157,Chance Guards,Chain Gloves,4,5,33
+158,Magefist,Light Gauntlets,4,5,33
+159,Frostburn,Gauntlets,4,5,33
+160,Venom Grip,Demonhide Gloves,4,5,33
+161,Gravepalm,Sharkskin Gloves,4,5,33
+162,Ghoulhide,Heavy Bracers,4,5,33
+163,Lava Gout,Battle Gauntlets,4,5,33
+164,Hellmouth,War Gauntlets,4,5,33
+165,Dracul's Grasp,Vampirebone Gloves,4,5,33
+166,Soul Drainer,Vambraces,4,5,33
+167,Steelrend,Ogre Gauntlets,4,5,33
+168,Hotspur,Boots,5,5,33
+169,Gorefoot,Heavy Boots,5,5,33
+170,Treads of Cthon,Chain Boots,5,5,33
+171,Goblin Toe,Light Plated Boots,5,5,33
+172,Tearhaunch,Greaves,5,5,33
+173,Infernostride,Demonhide Boots,5,5,33
+174,Waterwalk,Sharkskin Boots,5,5,33
+175,Silkweave,Mesh Boots,5,5,33
+176,War Traveler,Battle Boots,5,5,33
+177,Gore Rider,War Boots,5,5,33
+178,Sandstorm Trek,Scarabshell Boots,5,5,33
+179,Marrowwalk,Boneweave Boots,5,5,33
+180,Shadow Dancer,Myrmidon Greaves,5,5,33
+181,Lenymo,Sash,3,5,33
+182,Snakecord,Light Belt,3,5,33
+183,Nightsmoke,Belt,3,5,33
+184,Goldwrap,Heavy Belt,3,5,33
+185,Bladebuckle,Plated Belt,3,5,33
+186,String of Ears,Demonhide Sash,3,5,33
+187,Razortail,Sharkskin Belt,3,5,33
+188,Gloom's Trap,Mesh Belt,3,5,33
+189,Snowclash,Battle Belt,3,5,33
+190,Thundergod's Vigor,War Belt,3,5,33
+191,Arachnid Mesh,Spiderweb Sash,3,5,33
+192,Nosferatu's Coil,Vampirefang Belt,3,5,33
+193,Verdungo's Heary Cord,Mithril Coil,3,5,33
+194,Stoneraven,Matriarchal Spear,6,5,33
+195,Lycander's Flank,Ceremonial Pike,6,5,33
+196,Lycander's Aim,Ceremonial Bow,6,5,33
+197,Titan's Revenge,Ceremonial Javelin,6,5,33
+198,Thunderstroke,Matriarchal Javelin,6,5,33
+199,Blood Raven's Charge,Matriarchal Bow,6,5,33
+200,Shadow Killer,Battle Cestus,6,5,33
+201,Bartuc's Cut-Throat,Greater Talons,6,5,33
+202,Jade Talon,Wrist Sword,6,5,33
+203,Firelizard's Talons,,6,5,33
+204,Homunculus,Hierophant Trophy,7,5,33
+205,Darkforce Spawn,Bloodlord Skull,7,5,33
+206,Boneflame,Succubus Skull,7,5,33
+207,Arreat's Face,Slayer Guard,1,5,33
+208,Wolfhowl,Fury Visor,1,5,33
+209,Demonhorn's Edge,Destroyer Helm,1,5,33
+210,Halaberd's Reign,Conqueror Crown,1,5,33
+211,The Oculus,Swirling Crystal,6,5,33
+212,Eschuta's Temper,Eldritch Orb,6,5,33
+213,Death's Fathom,Dimensional Shard,6,5,33
+214,Jalal's Mane,Totemic Mask,1,5,33
+215,Cerebus's Bite,Blood Spirit,1,5,33
+216,Ravenlore,Sky Spirit,1,5,33
+217,Spirit Keeper,Earth Spirit,1,5,33
+218,Alma Negra,Sacred Rondache,7,5,33
+219,Herald of Zakarum,Gilded Shield,7,5,33
+220,Dragonscale,Zakarum Shield,7,5,33
+221,The Gnasher,Hand Axe,6,5,33
+222,Deathspade,Axe,6,5,33
+223,Bladebone,Double Axe,6,5,33
+224,Skull Splitter,Military Pick,6,5,33
+225,Rakescar,War Axe,6,5,33
+226,Axe of Fechmar,Large Axe,6,5,33
+227,Goreshovel,Broad Axe,6,5,33
+228,The Chieftain,Battle Axe,6,5,33
+229,Brainhew,Great Axe,6,5,33
+230,Humongous,Giant Axe,6,5,33
+231,Coldkill,Hatchet,6,5,33
+232,Butcher's Pupil,Cleaver,6,5,33
+233,Islestrike,Twin Axe,6,5,33
+234,Pompeii's Wrath,Crowbill,6,5,33
+235,Guardian Naga,Naga,6,5,33
+236,Warlord's Trust,Military Axe,6,5,33
+237,Spellsteel,Bearder Axe,6,5,33
+238,Stormrider,Tabar,6,5,33
+239,Boneslayer Blade,Gothic Axe,6,5,33
+240,The Minotaur,Ancient Axe,6,5,33
+241,Razor's Edge,Tomahawk,6,5,33
+242,Rune Master,Ettin Axe,6,5,33
+243,Cranebeak,War Spike,6,5,33
+244,Death Cleaver,Berserker Axe,6,5,33
+245,Ethereal Edge,Silver-Edged Axe,6,5,33
+246,Hellslayer,Decapitator,6,5,33
+247,Messerschmidt's Reaver,Champion Axe,6,5,33
+248,Executioner's Justice,Glorious Axe,6,5,33
+249,Pluckeye,Short Bow,6,5,33
+250,Witherstring,Hunter's Bow,6,5,33
+251,Raven Claw,Long Bow,6,5,33
+252,Rogue's Bow,Composite Bow,6,5,33
+253,Stormstrike,Short Battle Bow,6,5,33
+254,Wizendraw,Long Battle Bow,6,5,33
+255,Hellclap,Short War Bow,6,5,33
+256,Blastbark,Long War Bow,6,5,33
+257,Skystrike,Edge Bow,6,5,33
+258,Riphook,Razor Bow,6,5,33
+259,Kuko Shakaku,Cedar Bow,6,5,33
+260,Endlesshail,Double Bow,6,5,33
+261,Witchwild String,Short Siege Bow,6,5,33
+262,Cliffkiller,Large Siege Bow,6,5,33
+263,Magewrath,Rune Bow,6,5,33
+264,Goldstrike Arch,Gothic Bow,6,5,33
+265,Eaglehorn,Crusader Bow,6,5,33
+266,Widowmaker,Ward Bow,6,5,33
+267,Windforce,Hydra Bow,6,5,33
+268,Leadcrow,Light Crossbow,6,5,33
+269,Ichorsting,Crossbow,6,5,33
+270,Hellcast,Heavy Crossbow,6,5,33
+271,Doomslinger,Repeating Crossbow,6,5,33
+272,Langer Briser,Arbalest,6,5,33
+273,Pus Spitter,Siege Crossbow,6,5,33
+274,Buriza-Do Kyanon,Ballista,6,5,33
+275,Demon Machine,Chu-Ko-Nu,6,5,33
+276,Hellrack,Colossus Crossbow,6,5,33
+277,Gut Siphon,Demon Crossbow,6,5,33
+278,Gull,Dagger,6,5,33
+279,The Diggler,Dirk,6,5,33
+280,The Jade Tan Do,Kris,6,5,33
+281,Spectral Shard,Blade,6,5,33
+282,Spineripper,Poignard,6,5,33
+283,Heart Carver,Rondel,6,5,33
+284,Blackbog's Sharp,Cinquedeas,6,5,33
+285,Stormspike,Stiletto,6,5,33
+286,Wizardspike,Bone Knife,6,5,33
+287,Fleshripper,Fanged Knife,6,5,33
+288,Ghostflame,Legend Spike,6,5,33
+289,Felloak,Club,6,5,33
+290,Stoutnail,Spiked Club,6,5,33
+291,Crushflange,Mace,6,5,33
+292,Bloodrise,Morning Star,6,5,33
+293,The General's Tan Do Li Ga,Flail,6,5,33
+294,Ironstone,War Hammer,6,5,33
+295,Bonesnap,Maul,6,5,33
+296,Steeldiver,Great Maul,6,5,33
+297,Dark Clan Crusher,Cudgel,6,5,33
+298,Fleshrender,Barbed Club,6,5,33
+299,Sureshrill Frost,Flanged Mace,6,5,33
+300,Moonfall,Jagged Star,6,5,33
+301,Baezil's Vortex,Knout,6,5,33
+302,Earthshaker,Battle Hammer,6,5,33
+303,Bloodtree Stump,War Club,6,5,33
+304,The Gavel of Pain,Martel de Fer,6,5,33
+305,Demon's Arch,Balrog Spear,6,5,33
+306,Wraith Flight,Ghost Glaive,6,5,33
+307,Gargoyle's Bite,Winged Harpoon,6,5,33
+308,Nord's Tenderizer,Truncheon,6,5,33
+309,Demon Limb,Tyrant Club,6,5,33
+310,Baranar's Star,Devil Star,6,5,33
+311,Horizon's Tornado,Scourge,6,5,33
+312,Stormlash,Scourge,6,5,33
+313,Stone Crusher,Legendary Mallet,6,5,33
+314,Schaefer's Hammer,Legendary Mallet,6,5,33
+315,Windhammer,Ogre Maul,6,5,33
+316,Earth Shifter,Thunder Maul,6,5,33
+317,The Cranium Basher,Thunder Maul,6,5,33
+318,Dimoak's Hew,Bardiche,6,5,33
+319,Steelgoad,Voulge,6,5,33
+320,Soul Harvest,Scythe,6,5,33
+321,The Battlebranch,Poleaxe,6,5,33
+322,Woestave,Halberd,6,5,33
+323,The Grim Reaper,War Scythe,6,5,33
+324,The Meat Scraper,Lochaber Axe,6,5,33
+325,Blackleach Blade,Bill,6,5,33
+326,Athena's Wrath,Battle Scythe,6,5,33
+327,Pierre Tombale Couant,Partizan,6,5,33
+328,Husoldal Evo,Bec-De-Corbin,6,5,33
+329,Grim's Burning Dead,Grim Scythe,6,5,33
+330,Bonehew,Ogre Axe,6,5,33
+331,The Reaper's Toll,Thresher,6,5,33
+332,Tomb Reaver,Cryptic Axe,6,5,33
+333,Stormspire,Giant Thresher,6,5,33
+334,Knell Striker,Scepter,6,5,33
+335,Rusthandle,Grand Scepter,6,5,33
+336,Stormeye,War Scepter,6,5,33
+337,Zakarum's Hand,Rune Scepter,6,5,33
+338,The Fetid Sprinkler,Holy Water Sprinkler,6,5,33
+339,Hand of Blessed Light,Divine Scepter,6,5,33
+340,Heaven's Light,Mighty Scepter,6,5,33
+341,The Redeemer,Mighty Scepter,6,5,33
+342,Astreon's Iron Ward,Caduceus,6,5,33
+343,The Dragon Chang,Spear,6,5,33
+344,Razortine,Trident,6,5,33
+345,Bloodthief,Brandistock,6,5,33
+346,Lance of Yaggai,Spetum,6,5,33
+347,The Tannr Gorerod,Pike,6,5,33
+348,The Impaler,War Spear,6,5,33
+349,Kelpie Snare,Fuscina,6,5,33
+350,Soulfeast Tine,War Fork,6,5,33
+351,Hone Sundan,Yari,6,5,33
+352,Spire of Honor,Lance,6,5,33
+353,Arioc's Needle,Hyperion Spear,6,5,33
+354,Viperfork,Mancatcher,6,5,33
+355,Steel Pillar,War Pike,6,5,33
+356,Bane Ash,Short Staff,6,5,33
+357,Serpent Lord,Long Staff,6,5,33
+358,Spire of Lazarus,Gnarled Staff,6,5,33
+359,The Salamander,Battle Staff,6,5,33
+360,The Iron Jang Bong,War Staff,6,5,33
+361,Razorswitch,Jo Staff,6,5,33
+362,Ribcracker,Quarterstaff,6,5,33
+363,Chromatic Ire,Cedar Staff,6,5,33
+364,Warpspear,Gothic Staff,6,5,33
+365,Skull Collector,Rune Staff,6,5,33
+366,Ondal's Wisodm,Elder Staff,6,5,33
+367,Mang Song's Lesson,Archon Staff,6,5,33
+368,Rixot's Kenn,Short Sword,6,5,33
+369,Blood Crescent,Scimitar,6,5,33
+370,Skewer of Krinitiz,Sabre,6,5,33
+371,Gleamscythe,Falchion,6,5,33
+372,Griswold's Edge,Broad Sword,6,5,33
+373,Hellplague,Long Sword,6,5,33
+374,Culwen's Point,War Sword,6,5,33
+375,Shadowfang,Two-Handed Sword,6,5,33
+376,Soulflay,Claymore,6,5,33
+377,Kinemil's Awl,Giant Sword,6,5,33
+378,Blacktongue,Bastard Sword,6,5,33
+379,Ripsaw,Flamberge,6,5,33
+380,The Patriarch,Great Sword,6,5,33
+381,Bloodletter,Gladius,6,5,33
+382,Coldsteel Eye,Cutlass,6,5,33
+383,Hexfire,Shamshir,6,5,33
+384,Blade of Ali Baba,Tulwar,6,5,33
+385,Ginther's Rift,Dimensional Blade,6,5,33
+386,Headstriker,Battle Sword,6,5,33
+387,Plague Bearer,Rune Sword,6,5,33
+388,The Atlantean,Ancient Sword,6,5,33
+389,Crainte Vomir,Espandon,6,5,33
+390,Bing Sz Wang,Dacian Falx,6,5,33
+391,The Vile Husk,Tusk Sword,6,5,33
+392,Cloudcrack,Gothic Sword,6,5,33
+393,Todesfaelle Flamme,Zweihander,6,5,33
+394,Swordguard,Executioner Sword,6,5,33
+395,Djinn Slayer,Ataghan,6,5,33
+396,Bloodmoon,Elegant Blade,6,5,33
+397,Lightsabre,Phase Blade,6,5,33
+398,Azurewrath,Phase Blade,6,5,33
+399,Frostwind,Cryptic Sword,6,5,33
+400,Flamebellow,Balrog Blade,6,5,33
+401,Doombringer,Champion Sword,6,5,33
+402,The Grandfather,Colossus Blade,6,5,33
+403,Deathbit,Battle Dart,6,5,33
+404,The Scalper,Francisca,6,5,33
+405,Warshrike,Winged Knife,6,5,33
+406,Gimmershred,Flying Axe,6,5,33
+407,Lacerator,Winged Axe,6,5,33
+408,Torch of Iro,Wand,6,5,33
+409,Maelstrom,Yew Wand,6,5,33
+410,Gravenspine,Bone Wand,6,5,33
+411,Ume's Lament,Grim Wand,6,5,33
+412,Suicide Branch,Burnt Wand,6,5,33
+413,Carin Shard,Petrified Wand,6,5,33
+414,Arm of King Leoric,Tomb Wand,6,5,33
+415,Blackhand Key,Grave Wand,6,5,33
+416,Boneshade,Lich Wand,6,5,33
+417,Death's Web,Unearthed Wand,6,5,33
 418,Angelic Mantle,Ring Mail,2,4,0
 419,Angelic Sickle,Sabre,6,4,0
 420,Angelic Halo,Ring,9,4,0
