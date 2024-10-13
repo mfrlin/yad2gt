@@ -32,6 +32,7 @@ from PySide6.QtGui import (
 )
 
 import items
+import win
 
 class SystemTrayIcon(QSystemTrayIcon):
     def __init__(self, icon, parent=None):
@@ -341,7 +342,6 @@ class SearchWindow(QWidget):
     
     def keyPressEvent(self, event: QKeyEvent) -> None:
         if event.key() == QtCore.Qt.Key.Key_Escape:
-            # TODO: where does focus go after hiding this? can we focus D2 app?
             self.toggle_function()
         return super().keyPressEvent(event)
     
@@ -376,6 +376,7 @@ def main():
         else:
             search_window.hide()
             list_window.show()
+            win.activate_d2_window()
         show_list_window = not show_list_window
     
     # TODO: figure out something to deal with this interconnected state
