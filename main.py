@@ -39,9 +39,9 @@ class SystemTrayIcon(QSystemTrayIcon):
         super().__init__(icon, parent)
 
         menu = QMenu(parent)
-        exitAction = menu.addAction("Exit")
+        exitAction = menu.addAction('Exit')
         self.setContextMenu(menu)
-        QtCore.QObject.connect(exitAction, QtCore.SIGNAL("triggered()"), self.exit)
+        QtCore.QObject.connect(exitAction, QtCore.SIGNAL('triggered()'), self.exit)
 
     def exit(self):
         QtCore.QCoreApplication.exit()
@@ -73,7 +73,7 @@ class ListOverlayWindow(QWidget):
         # self.setPalette(palette)
         # self.setWindowOpacity(1)
         self._locked = True
-        self.setStyleSheet("background-color: rgba(0, 0, 0, 0.6);")
+        self.setStyleSheet('background-color: rgba(0, 0, 0, 0.6);')
         self.vlayout = QVBoxLayout()
         self.setLayout(self.vlayout)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground, True)
@@ -82,24 +82,24 @@ class ListOverlayWindow(QWidget):
         )  # setting WA_TranslucentBackground also sets WA_NoSystemBackground to True
         self.setWindowFlags(self.DEFAULT_STATE)
         
-        self.uniques_label = QLabel("")
-        self.uniques_label.setFont(QFont("ExocetBlizzardMixedCapsOTMedium", 15))
+        self.uniques_label = QLabel('')
+        self.uniques_label.setFont(QFont('ExocetBlizzardMixedCapsOTMedium', 15))
         self.uniques_label.setStyleSheet(
-            "QLabel { color: rgba(199, 179, 119, 0.8); background-color: transparent; }"
+            'QLabel { color: rgba(199, 179, 119, 0.8); background-color: transparent; }'
         )
         self.vlayout.addWidget(self.uniques_label)
 
-        self.sets_label = QLabel("")
-        self.sets_label.setFont(QFont("ExocetBlizzardMixedCapsOTMedium", 15))
+        self.sets_label = QLabel('')
+        self.sets_label.setFont(QFont('ExocetBlizzardMixedCapsOTMedium', 15))
         self.sets_label.setStyleSheet(
-            "QLabel { color: rgba(0, 255, 0, 0.8); background-color: transparent; }"
+            'QLabel { color: rgba(0, 255, 0, 0.8); background-color: transparent; }'
         )
         self.vlayout.addWidget(self.sets_label)
 
-        self.runes_label = QLabel("")
-        self.runes_label.setFont(QFont("ExocetBlizzardMixedCapsOTMedium", 15))
+        self.runes_label = QLabel('')
+        self.runes_label.setFont(QFont('ExocetBlizzardMixedCapsOTMedium', 15))
         self.runes_label.setStyleSheet(
-            "QLabel { color: rgba(175, 117, 5, 0.8); background-color: transparent; }"
+            'QLabel { color: rgba(175, 117, 5, 0.8); background-color: transparent; }'
         )
         self.vlayout.addWidget(self.runes_label)
 
@@ -129,14 +129,14 @@ class ListOverlayWindow(QWidget):
                 runes += 1
                 if item.id in items._FOUND_ITEMS_IDS:
                     found_runes += 1
-        uniqes_stats = f"[{found_uniques}/{uniques}][{int(found_uniques/uniques*100)}%]"
-        self.uniques_label.setText(f"[+] Uniques {'':>{27-12-len(uniqes_stats)}}{uniqes_stats}")
+        uniqes_stats = f'[{found_uniques}/{uniques}][{int(found_uniques/uniques*100)}%]'
+        self.uniques_label.setText(f'[+] Uniques {"":>{27-12-len(uniqes_stats)}}{uniqes_stats}')
 
-        sets_stats = f"[{found_sets}/{sets}][{int(found_sets/sets*100)}%]"
-        self.sets_label.setText(f"[+] Sets {'':>{27-7-len(uniqes_stats)}}{sets_stats}")
+        sets_stats = f'[{found_sets}/{sets}][{int(found_sets/sets*100)}%]'
+        self.sets_label.setText(f'[+] Sets {"":>{27-7-len(uniqes_stats)}}{sets_stats}')
 
-        runes_stats = f"[{found_runes}/{runes}][{int(found_runes/runes*100)}%]"
-        self.runes_label.setText(f"[+] Runes {'':>{27-9-len(runes_stats)}}{runes_stats}")
+        runes_stats = f'[{found_runes}/{runes}][{int(found_runes/runes*100)}%]'
+        self.runes_label.setText(f'[+] Runes {"":>{27-9-len(runes_stats)}}{runes_stats}')
 
 
     def toggle_locked(self):
@@ -253,12 +253,15 @@ class ButtonWindow(QWidget):
         self.hlayout.addWidget(self.list_button)
 
 class ItemCheckbox(QCheckBox):
-    def __init__(self, item_id):
+    def __init__(self, item_id=None):
         super().__init__()
         self.item_id = item_id
         self.clicked.connect(self.mark_item)
 
     def mark_item(self, checked: bool):
+        if self.item_id is None:
+            return
+        
         if checked:
             items.mark_found(self.item_id)
         else:
@@ -266,18 +269,20 @@ class ItemCheckbox(QCheckBox):
 
 
 class SearchWindow(QWidget):
+    ITEM_RESULTS_LIMIT = 15
+
     def __init__(self):
         super().__init__()
         self.setCursor(HandCursor())
-        self.setStyleSheet("background-color: rgba(0, 0, 0, 0.6);")
+        self.setStyleSheet('background-color: rgba(0, 0, 0, 0.6);')
         self.vlayout = QVBoxLayout()
         self.setLayout(self.vlayout)
         self.flayout = QFormLayout()
         self.search_bar = QLineEdit()
         self.search_bar.setMinimumWidth(665)  # TODO: why doesn't this work on window
-        self.search_bar.setFont(QFont("ExocetBlizzardMixedCapsOTMedium", 20))
+        self.search_bar.setFont(QFont('ExocetBlizzardMixedCapsOTMedium', 20))
         self.search_bar.setStyleSheet(
-            """
+            '''
             QLineEdit { 
                 color: rgba(255, 255, 255, 0.8); 
                 background-color: transparent;
@@ -287,7 +292,7 @@ class SearchWindow(QWidget):
             QLineEdit:focus { 
                 border: 1px solid rgb(199, 179, 119);
             }
-            """
+            '''
         )
         self.search_bar.textChanged.connect(self.search)
         self.vlayout.addWidget(self.search_bar)
@@ -305,33 +310,61 @@ class SearchWindow(QWidget):
             | QtCore.Qt.Tool
         )
 
-    def search(self):
-        while self.flayout.rowCount():
-            self.flayout.removeRow(0)
+        self.item_results_rows = []
+        for i in range(self.ITEM_RESULTS_LIMIT):
+            label = QLabel('TEST')
+            label.setFont(QFont('ExocetBlizzardMixedCapsOTMedium', 20))
+            checkbox = ItemCheckbox()
+            self.item_results_rows.append((checkbox, label,))
+            self.flayout.addRow(checkbox, label)
+            self.flayout.setRowVisible(i, False)
+        
+        label = QLabel('... results truncated ...')
+        label.setFont(QFont('ExocetBlizzardMixedCapsOTMedium', 20))
+        label.setStyleSheet(
+                'QLabel { color: rgba(255, 168, 0, 0.8); background-color: transparent; }'
+            )
+        self.flayout.addRow(label)
+        self.flayout.setRowVisible(self.ITEM_RESULTS_LIMIT, False)
+        
 
+    def search(self):
+        for i in range(self.flayout.rowCount()):
+            self.flayout.setRowVisible(i, False)
+
+        search_text = self.search_bar.text()
+        if not search_text:
+            return
+        
         result_items = items.search(self.search_bar.text())
-        for item in result_items[:20]:
-            label = QLabel(f"{item.name} - {item.base}")
+        for i, item in enumerate(result_items[:self.ITEM_RESULTS_LIMIT]):
+            checkbox, label = self.item_results_rows[i]
             if item.rarity == items.Rarity.UNIQUE:
-                color = "199, 179, 119"
+                color = '199, 179, 119'
             elif item.rarity == items.Rarity.SET:
-                color = "0, 255, 0"
+                color = '0, 255, 0'
             elif item.slot == items.Slot.RUNE:
                 # color = '255, 168, 0'  # crafted
-                color = "175, 117, 5"
-            label.setFont(QFont("ExocetBlizzardMixedCapsOTMedium", 20))
+                color = '175, 117, 5'
+            label.setText(f'{item.name} - {item.base}')
             label.setStyleSheet(
-                f"QLabel {{ color: rgba({color}, 0.8); background-color: transparent; }}"
+                f'QLabel {{ color: rgba({color}, 0.8); background-color: transparent; }}'
             )
-            checkbox = ItemCheckbox(item_id=item.id)
+            checkbox.item_id = item.id
             checkbox.setStyleSheet(
-                "QCheckBox::indicator { width: 20px; height: 18px;}"
-                f"QCheckBox::indicator::unchecked {{ border: 1px solid rgba({color}, 0.8); background: transparent; }}"
-                f"QCheckBox::indicator::checked {{ background: rgb({color}); }}"
+                'QCheckBox::indicator { width: 20px; height: 18px;}'
+                f'QCheckBox::indicator::unchecked {{ border: 1px solid rgba({color}, 0.8); background: transparent; }}'
+                f'QCheckBox::indicator::checked {{ background: rgb({color}); }}'
             )
             if item.id in items._FOUND_ITEMS_IDS:
                 checkbox.setChecked(True)
-            self.flayout.addRow(checkbox, label)
+            else:
+                checkbox.setChecked(False)
+            self.flayout.setRowVisible(i, True)
+        
+        # show results truncated row
+        if len(result_items) >= self.ITEM_RESULTS_LIMIT:
+            self.flayout.setRowVisible(self.ITEM_RESULTS_LIMIT, True)
     
     def hide(self):
         self.search_bar.clear()
@@ -392,5 +425,5 @@ def main():
     sys.exit(app.exec())
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
